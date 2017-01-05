@@ -1,0 +1,21 @@
+{
+  "name": "mn-backdrop",
+  "version": "0.0.1",
+  "description": "a layer backdrop to be used in other components",
+  "main": [
+    "dist/mn-backdrop.css",
+    "dist/mn-backdrop.js"
+  ],
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "open-color": "^1.4.1",
+  },
+  "devDependencies": {
+    "mn-gh-page": "0.0.8",
+    "mn-button": "^0.0.10"
+  }
+}
