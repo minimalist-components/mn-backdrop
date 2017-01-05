@@ -12,7 +12,7 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "open-color": "^1.4.1",
+    "open-color": "^1.4.1"
   },
   "devDependencies": {
     "mn-gh-page": "0.0.8",

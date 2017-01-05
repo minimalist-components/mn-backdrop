@@ -25,27 +25,27 @@ body
 
     p Then to display backdrop, just add to body the class .backdrop-visible
     mn-code.js.
-      document.body.classList.add('backdrop-visible')
+      document.body.classList.add('mn-backdrop-visible')
 
     p To hide, just remove the class
     mn-code.js.
-      document.body.classList.remove('backdrop-visible')
+      document.body.classList.remove('mn-backdrop-visible')
 
   //- script(src='https://rawgit.com/minimalist-components/mn-backdrop/master/docs/vendor.js')
   //- script(src='https://rawgit.com/minimalist-components/mn-backdrop/master/dist/mn-backdrop.js')
   script(src='docs/vendor.js')
-  //- script(src='dist/mn-backdrop.js')
+  script(src='dist/mn-backdrop.js')
   script.
     var button = document.querySelector('.mn-button')
     button.addEventListener('click', showBackdrop)
     document.body.addEventListener('click', hideBackdrop)
 
     function showBackdrop(event) {
-      document.body.classList.add('backdrop-visible')
+      document.body.classList.add('mn-backdrop-visible')
       event.target.blur()
       event.stopPropagation()
     }
 
     function hideBackdrop() {
-      document.body.classList.remove('backdrop-visible')
+      document.body.classList.remove('mn-backdrop-visible')
     }
