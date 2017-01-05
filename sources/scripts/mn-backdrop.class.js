@@ -11,7 +11,7 @@ class MnBackdrop {
 window.MnBackdrop = MnBackdrop
 document.addEventListener('keyup', escape)
 
-function escape() {
+function escape(event) {
   const esc = event.key === 'Escape'
   const backdropVisible = document.body.classList.contains('mn-backdrop-visible')
 
