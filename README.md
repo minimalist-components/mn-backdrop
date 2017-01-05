@@ -21,14 +21,14 @@ Or just download the main files, located in [dist/](https://github.com/minimalis
 
 ### Usage
 
-Then to display backdrop, just add to body the class .backdrop-visible
+Use the methods from class `MnBackdrop`
 
 ```js
-document.body.classList.add('mn-backdrop-visible')
+MnBackdrop.show()
 ```
 
 To hide, just remove the class
 
 ```js
-document.body.classList.remove('mn-backdrop-visible')
+MnBackdrop.hide()
 ```

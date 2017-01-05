@@ -20,11 +20,11 @@ body
 
     p Then to display backdrop, just add to body the class .backdrop-visible
     mn-code.js.
-      document.body.classList.add('mn-backdrop-visible')
+      MnBackdrop.show()
 
     p To hide, just remove the class
     mn-code.js.
-      document.body.classList.remove('mn-backdrop-visible')
+      MnBackdrop.hide()
 
   block scripts
     script(src='docs/vendor.js')
@@ -36,11 +36,11 @@ body
     document.body.addEventListener('click', hideBackdrop)
 
     function showBackdrop(event) {
-      document.body.classList.add('mn-backdrop-visible')
+      window.MnBackdrop.show()
       event.target.blur()
       event.stopPropagation()
     }
 
     function hideBackdrop() {
-      document.body.classList.remove('mn-backdrop-visible')
+      window.MnBackdrop.hide()
     }
