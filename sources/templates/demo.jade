@@ -1,0 +1,46 @@
+html
+  meta(name='viewport' content='width=device-width, user-scalable=no')
+
+  block styles
+    link(rel='stylesheet' href='docs/vendor.css')
+    link(rel='stylesheet' href='dist/mn-backdrop.css')
+
+body
+  h2 mn-backdrop
+  include github-corner
+
+  .layout-fullscreen.layout-centered
+    .layout-container.layout-row.align-center
+      button.mn-button show backdrop
+  
+  .docs.layout-container
+    mn-code.sh.
+      # to install this module
+      bower install --save mn-backdrop
+
+    p Then to display backdrop, just add to body the class .backdrop-visible
+    mn-code.js.
+      document.body.classList.add('mn-backdrop-visible')
+
+    p To hide, just remove the class
+    mn-code.js.
+      document.body.classList.remove('mn-backdrop-visible')
+
+  block scripts
+    script(src='docs/vendor.js')
+    script(src='dist/mn-backdrop.js')
+
+  script.
+    var button = document.querySelector('.mn-button')
+    button.addEventListener('click', showBackdrop)
+    document.body.addEventListener('click', hideBackdrop)
+
+    function showBackdrop(event) {
+      document.body.classList.add('mn-backdrop-visible')
+      event.target.blur()
+      event.stopPropagation()
+    }
+
+    function hideBackdrop() {
+      document.body.classList.remove('mn-backdrop-visible')
+    }
