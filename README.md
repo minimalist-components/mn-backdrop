@@ -4,7 +4,7 @@
 
 # mn-backdrop
 
-Buttons flat, raised, and action, with a minimalist design.
+a layer backdrop to be used in mn-components
 
 See the [demo](https://minimalist-components.github.io/mn-backdrop/)
 
