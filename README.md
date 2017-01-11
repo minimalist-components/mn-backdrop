@@ -27,7 +27,7 @@ Use the methods from class `MnBackdrop`
 MnBackdrop.show()
 ```
 
-To hide, just remove the class
+and hide
 
 ```js
 MnBackdrop.hide()
