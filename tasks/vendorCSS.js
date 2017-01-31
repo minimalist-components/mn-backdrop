@@ -17,6 +17,6 @@ function vendorCSSTask() {
   return gulp
     .src(dependencies)
     .pipe(concat('vendor.css'))
-    .pipe(minifyCss({keepSpecialComments: 0}))
+    .pipe(minifyCss())
     .pipe(gulp.dest('./docs'))
 }
