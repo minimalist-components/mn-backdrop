@@ -1,6 +1,6 @@
 {
   "name": "mn-backdrop",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/mn-backdrop.js",
   "files": [
     "dist"
@@ -21,6 +21,13 @@
   "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
   "license": "MIT",
   "homepage": "https://minimalist-components.github.io/mn-backdrop",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minimalist-components/mn-backdrop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/minimalist-components/mn-backdrop/issues"
+  },
   "dependencies": {
     "open-color": "^1.4.2"
   },
