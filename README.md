@@ -16,6 +16,7 @@ See the [demo](https://minimalist-components.github.io/mn-backdrop/)
 npm install --save mn-backdrop
 ```
 
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-backdrop/tree/master/dist) with your preferred tool.
 
 ### Usage
 
