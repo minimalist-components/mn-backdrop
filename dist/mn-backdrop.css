@@ -1,3 +1,3 @@
-body:before{content:'';position:fixed;top:0;left:0;width:100vw;height:100vh;opacity:0;-webkit-transition:opacity .4s ease;transition:opacity .4s ease;pointer-events:none;z-index:10;background-color:#212529}.mn-backdrop-visible{overflow:hidden}.mn-backdrop-visible:before{opacity:.6;pointer-events:all}
+body:before{content:'';position:fixed;top:0;left:0;width:100vw;height:100vh;opacity:0;transition:opacity .4s ease;pointer-events:none;z-index:10;background-color:#212529}.mn-backdrop-visible{overflow:hidden}.mn-backdrop-visible:before{opacity:.6;pointer-events:all}
 
 /*# sourceMappingURL=mn-backdrop.css.map */
