@@ -1,10 +1,19 @@
 class MnBackdrop {
-  static show() {
+  static show(options = {}) {
+    const {target} = options
+    this.target = target
     document.body.classList.add('mn-backdrop-visible')
   }
 
-  static hide() {
-    document.body.classList.remove('mn-backdrop-visible')
+  static hide(options = {}) {
+    const {target} = options
+    if (target === this.target) {
+      document.body.classList.remove('mn-backdrop-visible')
+    }
+  }
+
+  static get isVisible() {
+    return document.body.classList.contains('mn-backdrop-visible')
   }
 }
 
@@ -13,9 +22,9 @@ document.addEventListener('keyup', escape)
 
 function escape(event) {
   const esc = event.key === 'Escape'
-  const backdropVisible = document.body.classList.contains('mn-backdrop-visible')
 
-  if (esc && backdropVisible) {
+  if (esc && MnBackdrop.isVisible) {
+    MnBackdrop.target = undefined
     MnBackdrop.hide()
   }
 }

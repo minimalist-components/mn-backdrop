@@ -39,11 +39,13 @@ body
     document.body.addEventListener('click', hideBackdrop)
 
     function showBackdrop(event) {
-      window.MnBackdrop.show()
+      //- MnBackdrop.show({target: event.target})
+      MnBackdrop.show()
       event.target.blur()
       event.stopPropagation()
     }
 
     function hideBackdrop() {
-      window.MnBackdrop.hide()
+      //- MnBackdrop.hide({target: button})
+      MnBackdrop.hide()
     }
