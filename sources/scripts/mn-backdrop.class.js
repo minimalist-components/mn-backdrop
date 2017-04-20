@@ -1,10 +1,15 @@
 class MnBackdrop {
-  static show() {
+  static show(options = {}) {
+    const {target} = options
+    this.target = target
     document.body.classList.add('mn-backdrop-visible')
   }
 
-  static hide() {
-    document.body.classList.remove('mn-backdrop-visible')
+  static hide(options = {}) {
+    const {target} = options
+    if (target === this.target) {
+      document.body.classList.remove('mn-backdrop-visible')
+    }
   }
 
   static get isVisible() {
@@ -19,6 +24,7 @@ function escape(event) {
   const esc = event.key === 'Escape'
 
   if (esc && MnBackdrop.isVisible) {
+    MnBackdrop.target = undefined
     MnBackdrop.hide()
   }
 }
