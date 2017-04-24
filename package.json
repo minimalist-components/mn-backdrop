@@ -1,6 +1,6 @@
 {
   "name": "mn-backdrop",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/mn-backdrop.js",
   "files": [
     "dist"

@@ -10,6 +10,7 @@ class MnBackdrop {
   static hide(options = {}) {
     const {target} = options
     if (target === this.target) {
+      this.target = undefined
       document.body.classList.remove('mn-backdrop-visible')
     }
   }
