@@ -1,4 +1,4 @@
-<!-- [![Bower version](https://badge.fury.io/bo/mn-backdrop.svg)](https://badge.fury.io/bo/mn-backdrop) -->
+[![npm version](https://badge.fury.io/js/mn-backdrop.svg)](https://badge.fury.io/js/mn-backdrop)
 [![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/mn-backdrop.svg)](https://gemnasium.com/github.com/minimalist-components/mn-backdrop)
 [![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)   
 
