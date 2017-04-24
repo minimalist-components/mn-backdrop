@@ -31,3 +31,13 @@ and hide
 ```js
 MnBackdrop.hide()
 ```
+
+### Target
+
+Sometimes, different dependencies use this backdrop, to avoid conflicts between their, define a target as owner of backdrop, on methods, using the option `target`, eg.
+
+```js
+MnBackdrop.show({target: element})
+MnBackdrop.hide() // dont work, because backdrop has a target as owner
+MnBackdrop.hide({target: element})
+```

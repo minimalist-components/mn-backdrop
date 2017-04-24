@@ -2,6 +2,9 @@
 npm install --save mn-backdrop
 </mn-code><p>And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.</p><h3>usage</h3><p>Use the methods from class <strong>MnBackdrop</strong></p><mn-code class="js">MnBackdrop.show()
 </mn-code><p>and hide</p><mn-code class="js">MnBackdrop.hide()
+</mn-code><h3>Target</h3><p>Sometimes, different dependencies use this backdrop, to avoid conflicts between their, define a target as owner of backdrop, on methods, using the option <i>target</i>, eg.</p><mn-code class="js">MnBackdrop.show({target: element})
+MnBackdrop.hide() // dont work, because backdrop has a target as owner
+MnBackdrop.hide({target: element})
 </mn-code></div><script src="docs/vendor.js"></script><script src="dist/mn-backdrop.js"></script><script>var button = document.querySelector('.mn-button')
 button.addEventListener('click', showBackdrop)
 document.body.addEventListener('click', hideBackdrop)

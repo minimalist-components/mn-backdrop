@@ -29,6 +29,14 @@ body
     mn-code.js.
       MnBackdrop.hide()
 
+    h3 Target
+    p Sometimes, different dependencies use this backdrop, to avoid conflicts between their, define a target as owner of backdrop, on methods, using the option <i>target</i>, eg.
+
+    mn-code.js.
+      MnBackdrop.show({target: element})
+      MnBackdrop.hide() // dont work, because backdrop has a target as owner
+      MnBackdrop.hide({target: element})
+
   block scripts
     script(src='docs/vendor.js')
     script(src='dist/mn-backdrop.js')
