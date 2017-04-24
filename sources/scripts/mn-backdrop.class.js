@@ -1,7 +1,9 @@
 class MnBackdrop {
   static show(options = {}) {
-    const {target} = options
-    this.target = target
+    if (options.hasOwnProperty('target')) {
+      const {target} = options
+      this.target = target
+    }
     document.body.classList.add('mn-backdrop-visible')
   }
 
